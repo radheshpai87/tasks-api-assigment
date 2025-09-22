@@ -27,7 +27,7 @@ const writeFile = (filePath, data) => {
 
 app.get('/', (req, res) => {
     const tasks = readFile(filePath);
-    return res.status(200).json(data);
+    return res.status(200).json(tasks);
 });
 
 app.post('/', (req, res) => {
