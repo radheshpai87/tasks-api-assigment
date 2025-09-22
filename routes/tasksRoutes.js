@@ -44,7 +44,7 @@ app.post('/', (req, res) => {
     }
     tasks.push(newtask);
     writeFile(filePath, tasks);
-    res.status(201).json({Success: "Tasks added", ...data});
+    res.status(201).json({Success: "Tasks added", ...tasks});
 });
 
 module.exports = app;
