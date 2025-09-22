@@ -1,6 +1,5 @@
 const express = require('express');
 const fs = require('fs');
-const { findPackageJSON } = require('module');
 const path = require('path');
 const app = express();
 
