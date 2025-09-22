@@ -43,7 +43,7 @@ app.post('/', (req, res) => {
         status: status || 'pending'
     }
     tasks.push(newtask);
-    writeFile()
+    writeFile(filePath, tasks);
     res.status(201).json({Success: "Tasks added", ...data});
 });
 
