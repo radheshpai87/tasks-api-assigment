@@ -129,10 +129,3 @@ This project is licensed under the ISC License.
 ## Author
 
 Radhesh
-
-## Notes
-
-- Tasks are stored in `data/tasks.json` file
-- The API automatically creates unique IDs using timestamps
-- CORS is enabled for all origins (consider restricting in production)
-- Currently supports basic CRUD operations for tasks
