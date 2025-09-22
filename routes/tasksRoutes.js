@@ -39,7 +39,7 @@ app.post('/', (req, res) => {
         title,
         description,
         priority,
-        createdAt: Date.now().toISOString(),
+        createdAt: new Date().toISOString(),
         status: status || 'pending'
     }
     tasks.push(newtask);
