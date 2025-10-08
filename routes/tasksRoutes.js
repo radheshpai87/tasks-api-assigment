@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     const {title, description, priority, status} = req.body;
     if(!title || !priority) return res.status(400).send('Title & priority are required fields!');
-     if(!['low', 'medium', 'high', 'urgent'].includes(priority)) {
+    if(!['low', 'medium', 'high', 'urgent'].includes(priority)) {
         return res.status(400).send('Priority must be one of: "low", "medium", "high", "urgent"');
     }
     const tasks = readFile(filePath);
